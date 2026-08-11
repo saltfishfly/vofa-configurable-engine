@@ -1,0 +1,19 @@
+Artifact: dist/ConfigurableEngine.dll
+Architecture: x64 (PE machine 0x8664)
+Configuration: Release
+Qt kit: Qt 5.14.2 msvc2017_64
+Compiler used: MSVC 14.29.30133 (VS2019 v142, MSVC2017 ABI-compatible)
+DLL size: 59904 bytes
+SHA-256: E7F2EC30AAC05AA5127426B796B9625EEEC24ECD55BF3C0623A6F9FC43507A48
+
+Verification:
+- parser_tests: passed
+- QPluginLoader load: passed
+- qobject_cast<DataEngineInterface *>: passed
+- plugin entry-point sample decoding: passed
+
+Runtime dependencies reported by dumpbin:
+- Qt5Core.dll
+- VCRUNTIME140.dll
+- VCRUNTIME140_1.dll
+- Universal CRT / Windows system DLLs

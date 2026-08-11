@@ -1,0 +1,17 @@
+{
+  "SimplifiedChinese": {
+    "format": "由 configurable_engine.json 定义帧头、帧尾/帧长、字段偏移、字段类型、字节序、缩放和校验。默认示例：AA 55 + int16温度 + uint32压力 + float32电压 + 0D 0A。",
+    "example": "默认14字节帧：AA 55 C4 09 52 8D 01 00 66 66 66 40 0D 0A\n解析结果：I0=25.00，I1=101714，I2=3.60。\n协议配置文件名：configurable_engine.json。",
+    "url": "https://www.vofa.plus/docs/learning/dataengines/development/"
+  },
+  "TraditionalChinese": {
+    "format": "由 configurable_engine.json 定義幀頭、幀尾/幀長、欄位偏移、欄位類型、位元組序、縮放和校驗。預設示例：AA 55 + int16溫度 + uint32壓力 + float32電壓 + 0D 0A。",
+    "example": "預設14位元組幀：AA 55 C4 09 52 8D 01 00 66 66 66 40 0D 0A\n解析結果：I0=25.00，I1=101714，I2=3.60。\n協議配置檔名：configurable_engine.json。",
+    "url": "https://www.vofa.plus/docs/learning/dataengines/development/"
+  },
+  "English": {
+    "format": "Frame header, tail/length, field offsets, types, byte order, scaling and checksum are defined in configurable_engine.json. Default: AA 55 + int16 temperature + uint32 pressure + float32 voltage + 0D 0A.",
+    "example": "Default 14-byte frame: AA 55 C4 09 52 8D 01 00 66 66 66 40 0D 0A\nDecoded values: I0=25.00, I1=101714, I2=3.60.\nProtocol configuration file: configurable_engine.json.",
+    "url": "https://www.vofa.plus/docs/learning/dataengines/development/"
+  }
+}

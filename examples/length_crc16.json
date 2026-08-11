@@ -1,0 +1,24 @@
+{
+  "name": "LengthAndCrc16Example",
+  "framing": {
+    "header": "AA 55",
+    "minimum_length": 9,
+    "maximum_length": 1024,
+    "length_field": {
+      "offset": 2,
+      "size": 2,
+      "endian": "little",
+      "adjust": 4
+    }
+  },
+  "fields": [
+    {"name": "channel_0", "offset": 4, "type": "float32", "endian": "little"}
+  ],
+  "checksum": {
+    "type": "crc16_modbus",
+    "offset": 8,
+    "range_start": 0,
+    "range_end": 8,
+    "endian": "little"
+  }
+}

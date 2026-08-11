@@ -1,0 +1,28 @@
+{
+  "name": "A0A1TailExample",
+  "framing": {
+    "header": "A0",
+    "tail": "A1",
+    "minimum_length": 8,
+    "maximum_length": 8
+  },
+  "fields": [
+    {
+      "name": "temperature_c",
+      "offset": 1,
+      "type": "int16",
+      "endian": "little",
+      "scale": 0.01,
+      "bias": 0.0
+    },
+    {
+      "name": "pressure_pa",
+      "offset": 3,
+      "type": "uint32",
+      "endian": "little"
+    }
+  ],
+  "checksum": {
+    "type": "none"
+  }
+}

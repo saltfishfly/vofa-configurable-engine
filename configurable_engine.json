@@ -1,0 +1,35 @@
+{
+  "name": "ExampleSensor",
+  "framing": {
+    "header": "AA 55",
+    "tail": "0D 0A",
+    "fixed_length": 14,
+    "minimum_length": 14,
+    "maximum_length": 14
+  },
+  "fields": [
+    {
+      "name": "temperature_c",
+      "offset": 2,
+      "type": "int16",
+      "endian": "little",
+      "scale": 0.01,
+      "bias": 0.0
+    },
+    {
+      "name": "pressure_pa",
+      "offset": 4,
+      "type": "uint32",
+      "endian": "little"
+    },
+    {
+      "name": "voltage_v",
+      "offset": 8,
+      "type": "float32",
+      "endian": "little"
+    }
+  ],
+  "checksum": {
+    "type": "none"
+  }
+}
